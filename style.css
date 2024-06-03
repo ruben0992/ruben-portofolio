@@ -1,0 +1,108 @@
+body{
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  background-color: rgb(26, 24, 24);
+}
+
+.header{
+  height: 500px;
+  display:flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items:center;
+  color: #eee;
+  background-image:url(resources/background1.jpg);
+  background-size:cover; 
+}
+
+h1{
+  font-size: 90px;
+  font-family: "Playfair Display", serif;
+  font-weight: 600;
+  color: #eee;
+}
+
+h2{
+  font-family: "Playfair Display", serif;
+  color: #eee;
+}
+
+.card-body-about-me{
+  color: #eee;
+}
+
+.card-text{
+  display: flex;
+  text-align: justify;
+}
+
+.skills{
+  display: flex;
+  justify-content: space-around;
+}
+
+.skills-title{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #eee;
+}
+
+.my-projects{
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  color: #eee;
+}
+
+footer{
+  color: #eee;
+}
+
+.footer-left {
+  width: 40%;
+  height: 100%;
+}
+
+.contact-list{
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content:space-around;
+  padding: 0;
+}
+
+.home-btn{
+  display: flex;
+  justify-content: center;
+  padding: 0;
+}
+
+
+@media only screen and (max-width: 576px) {
+  h1{
+    text-align: center;
+  }
+
+  .image{
+    padding-right: 25px;
+  }
+
+  .skills{
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .get-in-touch{
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .contact-list{
+    flex-direction: column;
+    align-items: center;
+  }
+}
