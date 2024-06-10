@@ -7,6 +7,7 @@ body{
 
 .header{
   height: 500px;
+  width: 100%;
   display:flex;
   flex-direction: column;
   justify-content:center;
@@ -14,6 +15,7 @@ body{
   color: #eee;
   background-image:url(resources/background1.jpg);
   background-size:cover; 
+  background-repeat: no-repeat;
 }
 
 h1{
@@ -26,15 +28,20 @@ h1{
 h2{
   font-family: "Playfair Display", serif;
   color: #eee;
+  font-size: 40px;
 }
 
 .card-body-about-me{
   color: #eee;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-.card-text{
+.card-text-about-me{
   display: flex;
   text-align: justify;
+  font-size: 25px;
 }
 
 .skills{
@@ -42,11 +49,25 @@ h2{
   justify-content: space-around;
 }
 
+.card-skills{
+  background-color: #eee;
+}
+
 .skills-title{
   display: flex;
   flex-direction: column;
   justify-content: center;
   color: #eee;
+}
+
+.card-title-skills{
+  margin-top: 20px;
+  color: black;
+}
+
+.card-text-skills{
+  text-align: center;
+  margin: 30px;
 }
 
 .my-projects{
@@ -82,10 +103,25 @@ footer{
 
 
 @media only screen and (max-width: 576px) {
-  h1{
-    text-align: center;
+
+  .header{
+    height: 200px;
+    background-size: cover;
   }
 
+  h1{
+    text-align: center;
+    font-size: 50px;
+  }
+
+  h2{
+    font-size: 30px;
+  }
+
+  h3{
+    font-size: 20px;
+  }
+  
   .image{
     padding-right: 25px;
   }
@@ -106,3 +142,95 @@ footer{
     align-items: center;
   }
 }
+
+@media only screen and (min-width: 577px) and (max-width: 768px) {
+
+    .image{
+      padding-right: 25px;
+    }
+
+    .card-text-about-me{
+      font-size: 20px;
+    }
+
+    .skills{
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .get-in-touch{
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .contact-list{
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  @media only screen and (min-width: 769px) and (max-width: 1200px){
+
+    .card-text-about-me{
+      font-size: 16px;
+    }
+
+    .skills{
+      flex-direction: row;
+      align-content: center;
+      gap: 20px;
+    }
+  }  
+
+
+@media only screen and (min-width: 1400px) {
+
+    .header{
+      height: 800px;
+      width: 80%;
+      background-size: cover;
+    }
+
+    h1{
+      font-size: 150px;
+    }
+
+    h3{
+      font-size: 50px;
+    }
+
+    h2{
+      font-size:60px ;
+    }
+
+    .card-text-about-me{
+      font-size: 30px;
+      margin: 40px;
+    }
+
+    .card-skills{
+      display: flex;
+      flex-direction: column;
+      flex-basis: 25%;
+      background-color: #eee;
+    }
+
+    .card-title-skills{
+      color: black;
+      margin-top: 40px;
+    }
+
+    .card-text-skills{
+      font-size: 25px;
+      text-align: center;
+      margin: 60px;
+    }
+  }
+    
+  
+  
+  
+    
+  
+
