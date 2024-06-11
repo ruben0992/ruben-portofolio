@@ -121,6 +121,10 @@ footer{
   h3{
     font-size: 20px;
   }
+
+  .card-text-about-me{
+    font-size: 16px;
+  }
   
   .image{
     padding-right: 25px;
